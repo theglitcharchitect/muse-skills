@@ -16,16 +16,20 @@ thresholds from your own logs, not from documentation.
 
 ## 60 seconds
 
+One command. It clones the repo, installs the Jev decision layer and all
+24 skills into `~/workspace/skills/`, and leaves the demo and docs in
+`~/workspace/muse-skills/`:
+
 ```bash
-git clone <this-repo> muse-skills
-cd muse-skills
-python3 demo/run.py
+curl -fsSL https://raw.githubusercontent.com/theglitcharchitect/muse-skills/main/install.sh | bash
+cd ~/workspace/muse-skills && python3 demo/run.py
 ```
 
 No key, no network. The demo runs against a deterministic mock gateway and
 walks through four real decisions using the actual gate scripts. To go
 live, set `VERCEL_AI_GATEWAY_KEY` and run it again; the mock steps aside.
-Full setup in [docs/setup.md](docs/setup.md).
+Full setup in [docs/setup.md](docs/setup.md). Manual install: `git clone`
+this repo and copy `skills/*` into your skills directory.
 
 ## What the demo shows
 
