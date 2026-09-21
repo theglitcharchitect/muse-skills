@@ -8,7 +8,7 @@
 
 An agent that asks for a second opinion before it acts. This repo wires
 TypeSafe Jev into an agent's decision loop through a shadow-mode router,
-and ships the 24-skill library the router learns to choose between.
+and ships the 23-skill library the router learns to choose between.
 
 The core loop is small: before an expensive or irreversible step, the
 agent asks Jev a typed question. Choice, Score, or Boolean, always with
@@ -19,7 +19,7 @@ thresholds from your own logs, not from documentation.
 ## 60 seconds
 
 One command. It clones the repo, installs the Jev decision layer and all
-24 skills into `~/workspace/skills/`, and leaves the demo and docs in
+23 skills into `~/workspace/skills/`, and leaves the demo and docs in
 `~/workspace/muse-skills/`:
 
 ```bash
@@ -65,7 +65,7 @@ Four typed evaluations, three real gate scripts, one log per decision.
 
 ![architecture](docs/architecture.svg)
 
-Three layers. The **skill library** (`skills/`) is inert knowledge: 24
+Three layers. The **skill library** (`skills/`) is inert knowledge: 23
 playbooks an agent can load. The **decision layer**
 (`skills/jev-router/bin/`) asks Jev typed questions before expensive steps:
 the usage router gates actions, the safety gate classifies tool calls, the

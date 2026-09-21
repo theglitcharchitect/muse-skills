@@ -3,7 +3,7 @@
 ## What this repo is
 
 A decision layer for agents (TypeSafe Jev, routed through a shadow-mode
-usage router) plus a library of 24 skills it can route between. Contributions
+usage router) plus a library of 23 skills it can route between. Contributions
 should serve that shape: better gates, better question sets, better skills.
 
 ## How to contribute

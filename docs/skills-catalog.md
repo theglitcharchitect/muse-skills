@@ -1,6 +1,6 @@
 # Skills catalog
 
-Twenty-four skills. `jev-router` is the decision layer; the rest are the
+Twenty-three skills. `jev-router` is the decision layer; the rest are the
 library it learns to route between.
 
 | Skill | What it does |

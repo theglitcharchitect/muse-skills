@@ -6,7 +6,7 @@ How Jev, the router, and the skill library fit together.
 
 ## The three layers
 
-**1. The skill library (`skills/`).** Twenty-four skills, each a self-contained
+**1. The skill library (`skills/`).** Twenty-three skills, each a self-contained
 playbook: a `SKILL.md` that tells an agent when to use it and how, plus any
 scripts, references, and config it needs. Skills are inert knowledge. They do
 not decide anything on their own.

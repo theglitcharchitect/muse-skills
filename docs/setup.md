@@ -66,7 +66,7 @@ your own skill path. Some skills ship helper scripts under `bin/` or
 
 ```
 muse-skills/
-  skills/          24 skills, jev-router first among equals
+  skills/          23 skills, jev-router first among equals
   demo/            four-act terminal demo + fixtures
   docs/            architecture, setup, shadow-mode, catalog, sanitization notes
   examples/        a shadow-log excerpt to show what calibration reads like
