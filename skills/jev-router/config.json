@@ -1,0 +1,25 @@
+{
+  "auto_escalate": [],
+  "enabled": true,
+  "hard_deny_tools": [],
+  "max_retries": 3,
+  "mode": "shadow",
+  "proceed_threshold": 0.6,
+  "quiet_hours": {
+    "end": "07:00",
+    "start": "23:00",
+    "tz": "UTC"
+  },
+  "spend_review_above": null,
+  "thresholds": {
+    "askcheck": 0.7,
+    "browser_run": 0.6,
+    "delete": 0.9,
+    "publish": 0.8,
+    "research": 0.6,
+    "retry": 0.6,
+    "select": 0.6,
+    "send_message": 0.85,
+    "spend": 0.85
+  }
+}

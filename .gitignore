@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets/
+
+# Router logs (local calibration data, not for the repo)
+skills/jev-router/logs/
+demo/*.jsonl
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*~
+.vscode/
+.idea/

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520">
+<rect width="860" height="520" fill="#0e1116" rx="12"/>
+<defs><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#58a6ff"/></marker></defs>
+<text x="430.0" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#e6edf3" text-anchor="middle" font-weight="600">Muse + Jev: how the pieces fit</text>
+<rect x="40" y="70" width="180" height="90" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="130" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="600">Agent</text>
+<text x="130" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">proposes an action</text>
+<rect x="340" y="70" width="180" height="90" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="430" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="600">Usage router</text>
+<text x="430" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">bin/router.py</text>
+<text x="430" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">ALLOW / DENY / ESCALATE</text>
+<rect x="640" y="70" width="180" height="90" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="730" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="600">Shadow log</text>
+<text x="730" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">logs/*.jsonl</text>
+<text x="730" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">every decision recorded</text>
+<line x1="220" y1="115" x2="340" y2="115" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="520" y1="115" x2="640" y2="115" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#ah)"/>
+<rect x="40" y="220" width="180" height="90" rx="8" fill="#161b22" stroke="#d29922" stroke-width="1.5"/>
+<text x="130" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#d29922" text-anchor="middle" font-weight="600">Safety gate</text>
+<text x="130" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">bin/safety_gate.py</text>
+<text x="130" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">pre-tool-call check</text>
+<rect x="340" y="220" width="180" height="90" rx="8" fill="#161b22" stroke="#d29922" stroke-width="1.5"/>
+<text x="430" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#d29922" text-anchor="middle" font-weight="600">Draft judge</text>
+<text x="430" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">bin/judge.py</text>
+<text x="430" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">score before delivery</text>
+<rect x="640" y="220" width="180" height="90" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+<text x="730" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#3fb950" text-anchor="middle" font-weight="600">Human</text>
+<text x="730" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">authorizes</text>
+<text x="730" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">irreversible actions</text>
+<line x1="130" y1="160" x2="130" y2="220" stroke="#d29922" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="430" y1="160" x2="430" y2="220" stroke="#d29922" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="560" y1="265" x2="640" y2="265" stroke="#3fb950" stroke-width="1.5" marker-end="url(#ah)"/>
+<rect x="190" y="370" width="480" height="100" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="430" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="600">TypeSafe Jev via Vercel AI Gateway</text>
+<text x="430" y="422" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">typed Choice / Score / Boolean evaluations with probabilities</text>
+<text x="430" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">bin/jev.py  -  mock gateway in the demo, live with a key</text>
+<line x1="130" y1="310" x2="300" y2="400" stroke="#d29922" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="430" y1="310" x2="430" y2="370" stroke="#d29922" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="700" y1="310" x2="560" y2="400" stroke="#3fb950" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="430.0" y="502" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="400">Jev advises. The human authorizes. Shadow mode first, always.</text>
+</svg>

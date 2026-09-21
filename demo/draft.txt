@@ -1,0 +1,6 @@
+NovaCart announces the Q3 release of its analytics dashboard.
+
+The new dashboard is the fastest in its class, loading reports in under
+two seconds. Early customers report cutting reporting time in half.
+
+Pricing starts at $49 per seat per month. The release is available today.

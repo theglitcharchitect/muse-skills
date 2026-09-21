@@ -1,0 +1,35 @@
+#!/bin/bash
+# Deploy a static directory to Cloudflare Pages via wrangler.
+# Auth: the stored custom.cloudflare credential is exchanged for a surrogate
+# via authd; the surrogate (not the real token) is passed to wrangler, and the
+# egress layer swaps it for the real credential on the approved API calls.
+# Usage: cf-pages-deploy --project <name> --dir <site-dir> [--branch main]
+set -euo pipefail
+
+VENV_PY="$HOME/workspace/.venv/bin/python"
+ACCT_FILE="$HOME/workspace/newsroom/deploy/.cf-account-id"
+PROJECT=""; DIR=""; BRANCH="main"
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --project) PROJECT="$2"; shift 2;;
+    --dir) DIR="$2"; shift 2;;
+    --branch) BRANCH="$2"; shift 2;;
+    *) echo "unknown arg: $1" >&2; exit 2;;
+  esac
+done
+[ -n "$PROJECT" ] && [ -n "$DIR" ] || { echo "usage: cf-pages-deploy --project <name> --dir <site-dir> [--branch main]" >&2; exit 2; }
+[ -d "$DIR" ] || { echo "not a directory: $DIR" >&2; exit 2; }
+
+SURROGATE="$("$VENV_PY" -c "
+import sys
+sys.path.insert(0, '/opt/hatch/skills/skill-creator/bin')
+from dynamic_credentials import dynamic_credential_entry
+print(dynamic_credential_entry('custom.cloudflare')['surrogate'])
+")"
+[ -n "$SURROGATE" ] || { echo "failed to obtain credential surrogate" >&2; exit 1; }
+ACCOUNT_ID="$(cat "$ACCT_FILE")"
+
+export CLOUDFLARE_API_TOKEN="$SURROGATE"
+export CLOUDFLARE_ACCOUNT_ID="$ACCOUNT_ID"
+exec npx -y wrangler@latest pages deploy "$DIR" --project-name "$PROJECT" --branch "$BRANCH" --commit-dirty=true
