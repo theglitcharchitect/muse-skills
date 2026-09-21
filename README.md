@@ -4,6 +4,8 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](docs/setup.md)
 [![Jev](https://img.shields.io/badge/evals-TypeSafe%20Jev-8b5cf6.svg)](skills/jev-router/)
 
+![muse-skills banner](docs/banner.png)
+
 An agent that asks for a second opinion before it acts. This repo wires
 TypeSafe Jev into an agent's decision loop through a shadow-mode router,
 and ships the 24-skill library the router learns to choose between.
